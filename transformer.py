@@ -28,7 +28,7 @@ def attention(query, key,value, mask = None,dropout = None):  #query:Q, key: K, 
     Z = torch.matmul(attention,value)
     return Z, attention
         
-
+      
 class MultiheadAttention(nn.Module):
     def __init__(self,nheads,dmodel,dropout=0.1):
         super(MultiheadAttention,self).__init__()
