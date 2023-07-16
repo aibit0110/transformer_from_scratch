@@ -10,7 +10,7 @@ from IPython.display import Image
 import plotly.express as px
 # seaborn.set_context(context="talk")
    
-
+     
 def attention(query, key,value, mask = None,dropout = None):  #query:Q, key: K, value: V
     dk = key.shape[-1]
     score = torch.matmul(query,key.transpose(-1,-2)) #BxLxD
