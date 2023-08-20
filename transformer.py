@@ -12,6 +12,7 @@ import plotly.express as px
                      
      
 def attention(query, key,value, mask = None,dropout = None):  #query:Q, key: K, value: V
+  
     dk = key.shape[-1]
     score = torch.matmul(query,key.transpose(-1,-2)) #BxLxD
     scaled_score = score/math.sqrt(dk)
