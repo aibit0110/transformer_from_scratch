@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 # import seaborn
 from IPython.display import Image
 import plotly.express as px          
-# seaborn.set_context(context="talk")
+# seaborn.set_context(context="talk") 
                                        
      
 def attention(query, key,value, mask = None,dropout = None):  #query:Q, key: K, value: V
