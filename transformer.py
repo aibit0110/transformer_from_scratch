@@ -6,7 +6,7 @@ import math, copy, time
 from torch.autograd import Variable
 import matplotlib.pyplot as plt
 # import seaborn
-from IPython.display import Image
+from IPython.display import Image 
 import plotly.express as px          
 # seaborn.set_context(context="talk") 
                                        
