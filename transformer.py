@@ -118,6 +118,7 @@ class LayerNorm(nn.Module):
         return output
     
 
+
 class AddandNorm(nn.Module):
     def __init__(self,features,dropout=0.2,epsilon = 1e-9):
         super(AddandNorm,self).__init__()
